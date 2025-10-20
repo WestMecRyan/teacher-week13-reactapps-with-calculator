@@ -1,0 +1,86 @@
+# ------------------------------------
+# Node.js / npm
+# ------------------------------------
+# Dependency directory
+/node_modules
+
+# Logs and debug files
+npm-debug.log
+yarn-error.log
+.eslintcache
+/coverage
+
+# Build/Generated files
+/dist
+/build
+/out
+# Compiled JavaScript and Sourcemaps (from TypeScript)
+*.js
+!*.d.ts # Keep TypeScript declaration files if generated (e.g., for a library)
+*.js.map
+
+# ts-node cache file
+.ts-node/
+
+# ------------------------------------
+# Sensitive/Local Configuration
+# ------------------------------------
+# Environment variables (ALWAYS ignore sensitive data!)
+.env
+.env.*
+.local
+
+# ------------------------------------
+# Operating System (Cross-Platform) 🌍
+# ------------------------------------
+
+# macOS (Apple)
+.DS_Store
+.AppleDouble
+.LSOverride
+# Finder metadata/resource forks
+._*
+.Spotlight-V100
+.Trashes
+Icon
+/Icon?
+.fseventsd
+
+# Windows (Microsoft)
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+# Note: Linux generally uses a simple dot prefix (e.g., .ssh) which is often not
+# ignored unless it's a temp file, but here are some common ones:
+*.swp
+*~
+# .fuse_hidden* (Often in global gitignores, less common in project ones)
+
+# ------------------------------------
+# IDEs and Editors (Common)
+# ------------------------------------
+
+# Visual Studio Code
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+# VS Code often creates this to store workspace data
+.vscode/extensions.json
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim/Nano
+*~
+#*#
+
+# Atom Editor
+.atom/
