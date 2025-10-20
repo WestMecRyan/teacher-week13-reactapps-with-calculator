@@ -1,0 +1,24 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.card-container img {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.button-group button {
+  flex: 1;
+}
