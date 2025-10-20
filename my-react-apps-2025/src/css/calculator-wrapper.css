@@ -1,0 +1,32 @@
+.calculatorWrapper {
+  width: 80%;
+  height: 70vh;
+  border: 1px solid white;
+  display: inline-flex;
+  border-radius: 5px;
+}
+.buttonWrapper {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+}
+.displayWrapper {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 40%;
+  margin: 0 auto;
+}
+.primaryDisplay {
+  background-color: azure;
+  min-height: 10%;
+  min-width: 90%;
+  margin: 0 auto;
+  color: black;
+}
+.calcAvatar {
+  width: 90%;
+  margin: 10px;
+}

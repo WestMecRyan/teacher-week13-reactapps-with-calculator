@@ -1,0 +1,14 @@
+/* calc-button.css */
+.calcButton {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: aquamarine;
+  margin: 0px 20px;
+  color: black;
+  font-weight: bold;
+  filter: drop-shadow(10px 5px 4px #dd4744);
+  border-radius: 2px
+}
