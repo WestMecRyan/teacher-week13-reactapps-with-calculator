@@ -9,27 +9,37 @@ function CalculatorWrapper() {
   const sendToOutput = (value) => {
     setOutput(output + value);
   };
+  const buttons = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "CLEAR",
+    "0",
+    "ENTER",
+    "+",
+    "-",
+    "*",
+    "/",
+    "%",
+    ".",
+  ];
   return (
     <div className="calculatorWrapper">
       <div className="buttonWrapper">
-        <CalcButton textValue="1" sendToOutput={sendToOutput}></CalcButton>
-        <CalcButton textValue="2"></CalcButton>
-        <CalcButton textValue="3"></CalcButton>
-        <CalcButton textValue="4"></CalcButton>
-        <CalcButton textValue="5"></CalcButton>
-        <CalcButton textValue="6"></CalcButton>
-        <CalcButton textValue="7"></CalcButton>
-        <CalcButton textValue="8"></CalcButton>
-        <CalcButton textValue="9"></CalcButton>
-        <CalcButton textValue="CLEAR"></CalcButton>
-        <CalcButton textValue="0"></CalcButton>
-        <CalcButton textValue="ENTER"></CalcButton>
-        <CalcButton textValue="+"></CalcButton>
-        <CalcButton textValue="-"></CalcButton>
-        <CalcButton textValue="*"></CalcButton>
-        <CalcButton textValue="/"></CalcButton>
-        <CalcButton textValue="%"></CalcButton>
-        <CalcButton textValue="."></CalcButton>
+        {buttons.map((value, index) => (
+          <CalcButton
+            key={index}
+            textValue={value}
+            onClick={sendToOutput}
+            index={index}
+          ></CalcButton>
+        ))}
       </div>
       <div className="displayWrapper">
         <div className="primaryDisplay">{output}</div>
